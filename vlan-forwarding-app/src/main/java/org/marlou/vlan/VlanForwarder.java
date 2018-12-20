@@ -320,6 +320,10 @@ public class VlanForwarder {
         // OutboundPacket packet = new DefaultOutboundPacket(concernedDevice.getCore().id(), treatment, context.inPacket().unparsed());
         // log.info("PACKET:   " + packet.toString());
         // packetService.emit(packet);
+    	
+    	if (groupService.getGroup(concernedDevice.getCore().id(), generateGroupKey(concernedDevice.getCore().id(), Integer.valueOf(inPort.toString() + "" + vlanId.toString()))) != null) {
+    		log.info("THE GROUP DOES EXIST SO DO SOME SHIT!");
+    	}
         
         // This loop thus not creates a set of Output ports. Placing the 'context.send()' inside the loop also doesn't fix things.
      	for (int port : concernedDevice.getPortsPerVlan().get(vlanInt)) {
