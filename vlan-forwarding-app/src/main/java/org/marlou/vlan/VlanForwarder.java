@@ -321,6 +321,12 @@ public class VlanForwarder {
         // log.info("PACKET:   " + packet.toString());
         // packetService.emit(packet);
     	
+    	Group towards = groupService.getGroup(concernedDevice.getCore().id(), generateGroupKey(concernedDevice.getCore().id(), Integer.valueOf(inPort.toString() + "" + vlanId.toString())));
+    	log.info("WE ARE GOING TO SEND TO" + towards.id().toString());
+    	context.treatmentBuilder().group(towards.id());
+    	context.send();
+    	
+    	/*
     	if (groupService.getGroup(concernedDevice.getCore().id(), generateGroupKey(concernedDevice.getCore().id(), Integer.valueOf(inPort.toString() + "" + vlanId.toString()))) != null) {
     		log.info("THE GROUP DOES EXIST SO DO SOME SHIT!");
     	}
@@ -333,6 +339,7 @@ public class VlanForwarder {
     		}
     	}
     	context.send();
+    	*/
     }
     
     /**
