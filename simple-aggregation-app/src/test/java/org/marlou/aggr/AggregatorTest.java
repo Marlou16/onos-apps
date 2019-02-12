@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-present Open Networking Foundation
+ * Copyright 2019-present Open Networking Foundation
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.marlou.vlan;
+package org.marlou.aggr;
 
 import org.junit.After;
 import org.junit.Before;
@@ -22,13 +22,13 @@ import org.junit.Test;
 /**
  * Set of tests of the ONOS application component.
  */
-public class VlanForwarderTest {
+public class AggregatorTest {
 
-    private VlanForwarder component;
+    private Aggregator component;
 
     @Before
     public void setUp() {
-        component = new VlanForwarder();
+        component = new Aggregator();
         component.activate();
 
     }
