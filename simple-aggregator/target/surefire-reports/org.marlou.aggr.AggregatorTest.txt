@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.marlou.aggr.AggregatorTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.24 s <<< FAILURE! - in org.marlou.aggr.AggregatorTest
+basics(org.marlou.aggr.AggregatorTest)  Time elapsed: 0.766 s  <<< ERROR!
+java.lang.NullPointerException
+	at org.marlou.aggr.AggregatorTest.setUp(AggregatorTest.java:32)
+
+basics(org.marlou.aggr.AggregatorTest)  Time elapsed: 0.772 s  <<< ERROR!
+java.lang.NullPointerException
+	at org.marlou.aggr.AggregatorTest.tearDown(AggregatorTest.java:38)
+
