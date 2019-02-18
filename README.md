@@ -9,6 +9,7 @@ In the app `/target/` folders, the `.jar` and `.oar` files are available to inst
 Currently, we have the following apps:
 * __My first app__, implementing a simple static loadbalancer
 * An app implementing __basic VLAN support__, which can be applied in a reactive and static manner. This app also contains custom-made ONOS commands.
+* A simple __Aggregator__, which implements static forwarding to an uplink and broadcast over the downlink.
 
 More information on the projects can be found in the `README` files of the projects itself.
 
