@@ -1,5 +1,5 @@
-target/
-.metadata/
-.settings/
-.project
-pom.xml~
+*/target/
+*/.metadata/
+*/.settings/
+*/.project
+*/pom.xml~
