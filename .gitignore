@@ -1,5 +1,5 @@
-first-loadbalancing-app/target/
-first-loadbalancing-app/.metadata/
-first-loadbalancing-app/.settings/
+target/
+.metadata/
+.settings/
 .project
 pom.xml~
